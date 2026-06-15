@@ -11,7 +11,7 @@
 <style>
 .nav-link{
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 1.5rem;
   margin: 0 10px;
   text-decoration: none;
   color: var(--muted-foreground);
@@ -19,7 +19,7 @@
 }
 .nav-link-active{
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 1.5rem;
   color: var(--foreground);
   text-decoration: none;
   border-bottom: 2px solid var(--foreground);

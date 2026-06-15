@@ -9,7 +9,7 @@ const {
 
 <style>
   .h3-info{
-    font-size: 1.15em;
+    font-size: 2.5rem;
     color: var(--foreground);
   }
   h3{
