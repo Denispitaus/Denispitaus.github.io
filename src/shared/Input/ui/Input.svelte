@@ -18,6 +18,6 @@ input{
   height: auto;
   border-radius: 5px;
   width: 90%;
-  font-size: 0.7em;
+  font-size: 1.5rem;
 }
 </style>

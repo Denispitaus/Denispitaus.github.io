@@ -10,20 +10,20 @@
 
 <style>
 p{
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--muted-foreground);
 }
 .p-black{
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--foreground);
   font-weight: 600;
 }
 .p-big{
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 .p-text{
-  font-size: 1rem;
+  font-size: 1.0rem;
   margin-bottom: 10px;
   color: var(--muted-foreground);
 }

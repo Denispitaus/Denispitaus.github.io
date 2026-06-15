@@ -18,7 +18,7 @@ button{
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 1.6rem;
   transition: all 0.3s ease;
 }
 
@@ -34,7 +34,7 @@ button:hover{
   background-color: var(--background);
   color: var(--muted-foreground);
   border: 1px solid var(--muted-foreground);
-  font-size: 0.6em;
+  font-size: 1.2rem;;
   transition: all 0.3s ease;
 }
 .btn-white:hover{

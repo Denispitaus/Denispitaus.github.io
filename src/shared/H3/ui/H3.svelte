@@ -13,22 +13,22 @@ const {
     color: var(--foreground);
   }
   h3{
-    font-size: 0.9em;
+    font-size: 2rem;
     color: var(--foreground);
     font-weight: 500;
   }
   .h3-big{
-    font-size: 1.25em;
+    font-size: 2.5rem;
     color: var(--foreground);
     font-weight: 600;
   }
   .h3-small{
-    font-size: 0.9em;
+    font-size: 2.0rem;
     color: var(--foreground);
     font-weight: 600;
   }
   .h3-name{
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: 600;
     color: var(--foreground);
   }

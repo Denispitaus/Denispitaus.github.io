@@ -28,7 +28,7 @@
 }
 .nav-link-open{
   font-weight: 600;
-  font-size: 0.6em;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--foreground);
   cursor: pointer;

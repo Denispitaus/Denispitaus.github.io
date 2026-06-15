@@ -38,13 +38,13 @@
       </div>
 
     {/each}
-      <Button text='Отправить'/>
+    <Button text='Отправить'/>
   </section>
 </section>
 
 <style>
 .icon{
-  width: 10px;
+  width: 20px;
   height: auto;
 }
   .juf{
@@ -56,10 +56,12 @@
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border);
-    padding: 20px 20px;
+    padding: 20px 40px;
     justify-content: space-between;
     border-radius: 5px;
-    height: 320px;
+    height: 100%;
+    gap: 40px;
+    width: 100%;
 
   }
   .contactBlock{
@@ -74,7 +76,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 25px 0;
   border-bottom: 1px solid var(--border);
 
 }

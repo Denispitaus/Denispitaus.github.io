@@ -13,7 +13,7 @@
 
 <section class="aboutPage">
   <section class="block-logo">
-    <img src="src/static/img/my-logo.gif" alt="My Logo" class="logo">
+    <img src="/img/my-logo.gif" alt="My Logo" class="logo">
     <div class="description">
       <H3 style="h3-name" text="Денис Баскаков"/>
       <Paragraf style="p-big" text="Frontend Developer"/>
@@ -78,6 +78,7 @@
 .line{
   background-color: var(--border);
   height: 0.01px;
+  margin: 20px 0;
 }
 .description{
   display: flex;
@@ -90,9 +91,9 @@
   gap: 50px;
 }
 .logo{
-  width: 70px;
-  height: 70px;
-  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
   margin-bottom: 20px;
 }
 .block-logo{
@@ -103,6 +104,7 @@
 }
 .block-info{
   width: 100%;
+  height: 100%;
 }
   @media(max-width: 560px){
   .aboutPage{

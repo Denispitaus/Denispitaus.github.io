@@ -18,7 +18,7 @@
   .layout-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Растягивает контейнер на весь экран */
+    min-height: 100vh;
   }
 
   /* 2. Стили для контента */
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center; /* Центрирует по вертикали внутри main */
     align-items: center;    /* Центрирует по горизонтали внутри main */
-    padding: 50px 250px;
+    padding: 0 250px;
   }
 
   /* Ваши адаптивные стили без изменений */
