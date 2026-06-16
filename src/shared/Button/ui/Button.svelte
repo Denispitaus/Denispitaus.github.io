@@ -47,4 +47,12 @@ button:hover{
   color: var(--background);
   border: 1px solid var(--click-foreground);
 }
+@media(max-width: 500px){
+  .btn-white{
+    font-size: 0.8rem;
+  }
+  button{
+    font-size: 1rem;
+  }
+}
 </style>

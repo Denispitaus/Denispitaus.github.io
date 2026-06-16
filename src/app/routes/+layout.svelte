@@ -14,6 +14,7 @@
 </div>
 
 <style>
+
   /* 1. Создаем flex-контейнер на всю высоту экрана */
   .layout-wrapper {
     display: flex;
@@ -28,7 +29,7 @@
     flex-direction: column;
     justify-content: center; /* Центрирует по вертикали внутри main */
     align-items: center;    /* Центрирует по горизонтали внутри main */
-    padding: 0 250px;
+    padding: 50px 250px;
   }
 
   /* Ваши адаптивные стили без изменений */

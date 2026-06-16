@@ -106,7 +106,7 @@
   width: 100%;
   height: 100%;
 }
-  @media(max-width: 560px){
+  @media(max-width: 1250px){
   .aboutPage{
     flex-direction: column;
     }
@@ -117,4 +117,10 @@
     align-items: center;
   }
   }
+  @media(max-width: 500px){
+  .logo{
+    width: 150px;
+    height: 150px;
+}
+}
 </style>

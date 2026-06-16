@@ -17,8 +17,9 @@
     <H3 text="Денис Баскаков" />
     <Paragraf text="Frontend developer" />
   </div>
-  {#if widthWindow<= 500}
+  {#if widthWindow<= 800}
     <div>
+      <!-- svelte-ignore a11y_consider_explicit_label -->
       <button class='button-line' onclick={()=>{isOpenBurger = !isOpenBurger}}>
         <div class="line-btn"></div>
         <div class="line-btn"></div>
@@ -37,7 +38,7 @@
     {/each}
   </nav>
   {/if}
-    {#if isOpenBurger & widthWindow <= 500}
+    {#if isOpenBurger & widthWindow <= 800}
       <div class="openBurger">
         {#each navItems as item}
           <Link
@@ -84,15 +85,15 @@
   justify-content: space-between;
   flex-direction: column;
   position: absolute;
-  width: 100px;
   gap: 20px;
-  background-color: rgba(232, 232, 232, 0.595);
+  background-color: rgb(232, 232, 232);
   border-radius: 15px;
-  top: 60px;
+  top: 80px;
   right: 5px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   align-items: center;
   border: 1px solid var(--border);
+  box-sizing: border-box;
 }
 .header{
   background-color: var(--background);
@@ -103,7 +104,6 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
-
 }
 .name-block{
   display: flex;
@@ -119,5 +119,11 @@
       padding: 10px 5px;
       gap: 10px;
   }
+}
+@media(min-width: 500px){
+  .openBurger{
+    top: 110px;
+    right: 5px;
+}
 }
 </style>

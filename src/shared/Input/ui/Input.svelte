@@ -17,7 +17,13 @@ input{
   padding: 15px 15px;
   height: auto;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   font-size: 1.5rem;
+  box-sizing: border-box;
+}
+@media(max-width: 500px){
+  input{
+    font-size: 1rem;
+  }
 }
 </style>

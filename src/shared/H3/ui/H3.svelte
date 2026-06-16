@@ -32,4 +32,18 @@ const {
     font-weight: 600;
     color: var(--foreground);
   }
+@media(max-width: 500px){
+  .h3-name{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .h3-small{
+    font-size: 1.6rem;
+  }
+  .h3-big{
+    font-size: 1.6rem;
+  }
+}
 </style>

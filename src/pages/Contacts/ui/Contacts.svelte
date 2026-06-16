@@ -61,8 +61,6 @@
     border-radius: 5px;
     height: 100%;
     gap: 40px;
-    width: 100%;
-
   }
   .contactBlock{
       border-top: 1px solid var(--border);
@@ -106,10 +104,15 @@
   flex-direction: column;
   gap: 20px;
 }
-@media(max-width: 1109px){
+@media(max-width: 1800px){
   .contactPage{
     flex-direction: column;
     gap: 50px;
+  }
+}
+@media(max-width: 500px){
+    .newBlock{
+      padding: 10px 20px;
   }
 }
 </style>

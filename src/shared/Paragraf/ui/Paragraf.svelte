@@ -27,4 +27,15 @@ p{
   margin-bottom: 10px;
   color: var(--muted-foreground);
 }
+@media(max-width: 500px){
+  .p-black{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .h3-small{
+    font-size: 1.6rem;
+  }
+}
 </style>
