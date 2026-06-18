@@ -4,11 +4,7 @@
   import H3 from "$shared/H3";
   import LineText from '$widgets/LineText';
   import { personalData } from '$entities/PersonalData';
-  const smallInfoData = [
-    {title: "10+", text: "Проектов"},
-    {title: "1 год", text: "Опыта"},
-    {title: "8+", text: "Технологий"},
-  ]
+  import {smallInfoData} from '$entities/AboutData.js'
 </script>
 
 <section class="aboutPage">
