@@ -4,18 +4,14 @@
   import H3 from "$shared/H3";
   import LineText from '$widgets/LineText';
   import { personalData } from '$entities/PersonalData';
-  const smallInfoData = [
-    {title: "10+", text: "Проектов"},
-    {title: "1 год", text: "Опыта"},
-    {title: "8+", text: "Технологий"},
-  ]
+  import {smallInfoData} from '$entities/AboutData.js'
 </script>
 
 <section class="aboutPage">
   <section class="block-logo">
-    <img src="src/static/img/my-logo.gif" alt="My Logo" class="logo">
+    <img src="/img/my-logo.gif" alt="My Logo" class="logo">
     <div class="description">
-      <H3 style="h3-name" text="Денис Баскаков"/>
+      <H3 style="h3-name" text="Denispitaus"/>
       <Paragraf style="p-big" text="Frontend Developer"/>
       <Paragraf style="p-text" text="Создаю быстрые и аккуратные веб-интерфейсы. Здесь - мои проекты, навыки и контакты."/>
     </div>
@@ -31,13 +27,6 @@
       </a>
     </section>
   </section>
-  <section class="block-info">
-    <H3 text="Личные данные"/>
-    <hr class="line"/>
-    {#each personalData as value}
-      <LineText title={value.title} text={value.text}/>
-      <hr class="line"/>
-    {/each}
     <section class="small-info">
       {#each smallInfoData as value}
       <div class='blockSmallInfo'>
@@ -46,7 +35,6 @@
       </div>
 
       {/each}
-    </section>
   </section>
 
 
@@ -75,44 +63,44 @@
   justify-content: center;
   gap: 20px;
 }
-.line{
-  background-color: var(--border);
-  height: 0.01px;
-}
 .description{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .aboutPage{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   gap: 50px;
 }
 .logo{
-  width: 70px;
-  height: 70px;
-  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
   margin-bottom: 20px;
 }
 .block-logo{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 
 }
-.block-info{
-  width: 100%;
-}
-  @media(max-width: 560px){
+  @media(max-width: 1250px){
   .aboutPage{
     flex-direction: column;
     }
   .block-logo{
     align-items: center;
   }
-  .description{
-    align-items: center;
   }
-  }
+  @media(max-width: 500px){
+  .logo{
+    width: 150px;
+    height: 150px;
+}
+}
 </style>

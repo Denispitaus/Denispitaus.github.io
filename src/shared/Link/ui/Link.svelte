@@ -11,7 +11,7 @@
 <style>
 .nav-link{
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 1.5rem;
   margin: 0 10px;
   text-decoration: none;
   color: var(--muted-foreground);
@@ -19,19 +19,33 @@
 }
 .nav-link-active{
   font-weight: 600;
-  font-size: 0.7em;
-  color: var(--foreground);
+  font-size: 1.5rem;
+  color: white;
   text-decoration: none;
-  border-bottom: 2px solid var(--foreground);
-  padding-bottom: 3px;
-  margin: 0 10px;
+  background-color: var(--foreground);
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 15px;
+  text-align: center;
 }
 .nav-link-open{
   font-weight: 600;
-  font-size: 0.6em;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--foreground);
   cursor: pointer;
+}
+@media(max-width: 500px){
+  .nav-link-open{
+    font-size: 0.8rem;
+  }
+  .nav-link-active{
+    font-size: 1rem;
+    padding: 5px;
+}
+.nav-link{
+  font-size: 1rem;
+}
 }
 .nav-link:hover{
   color: var(--foreground);

@@ -62,17 +62,19 @@
   }
 
   .progress {
-    width: 250px;
+    width: 100%;
     height: 2px;
     background: var(--muted-foreground);
     border-radius: 999px;
     overflow: hidden;
+
 }
 
 .progress-fill {
   height: 100%;
   background: var(--foreground);
   border-radius: 999px;
+
 }
   .skills-block-additional{
     display: flex;
@@ -93,11 +95,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 .skills-page{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .title-block{
   display: flex;
@@ -108,8 +112,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 150px;
 }
-@media(max-width: 800px){
+@media(max-width: 1500px){
     .skills-block{
       flex-direction: column;
       gap: 50px;

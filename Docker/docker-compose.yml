@@ -1,0 +1,27 @@
+name: denis-portfolio
+
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile
+    container_name: denis-frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOST: 0.0.0.0
+      BACKEND_ORIGIN: http://feedback-bot:8080
+      # Публичный URL сайта (важно за reverse proxy / для форм и редиректов)
+      # ORIGIN: https://example.com
+    ports:
+      - "3000:3000"
+    networks:
+      - landing-net
+      - denis-net
+
+networks:
+  landing-net:
+    external: true
+  denis-net:
+    external: true
