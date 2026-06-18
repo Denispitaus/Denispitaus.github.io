@@ -25,7 +25,7 @@
   background-color: var(--foreground);
   width: 100%;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   text-align: center;
 }
 .nav-link-open{

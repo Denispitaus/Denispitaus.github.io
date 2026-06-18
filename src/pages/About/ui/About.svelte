@@ -15,7 +15,7 @@
   <section class="block-logo">
     <img src="/img/my-logo.gif" alt="My Logo" class="logo">
     <div class="description">
-      <H3 style="h3-name" text="Денис Баскаков"/>
+      <H3 style="h3-name" text="Denispitaus"/>
       <Paragraf style="p-big" text="Frontend Developer"/>
       <Paragraf style="p-text" text="Создаю быстрые и аккуратные веб-интерфейсы. Здесь - мои проекты, навыки и контакты."/>
     </div>
@@ -31,13 +31,6 @@
       </a>
     </section>
   </section>
-  <section class="block-info">
-    <H3 text="Личные данные"/>
-    <hr class="line"/>
-    {#each personalData as value}
-      <LineText title={value.title} text={value.text}/>
-      <hr class="line"/>
-    {/each}
     <section class="small-info">
       {#each smallInfoData as value}
       <div class='blockSmallInfo'>
@@ -46,7 +39,6 @@
       </div>
 
       {/each}
-    </section>
   </section>
 
 
@@ -75,18 +67,16 @@
   justify-content: center;
   gap: 20px;
 }
-.line{
-  background-color: var(--border);
-  height: 0.01px;
-  margin: 20px 0;
-}
 .description{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .aboutPage{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   gap: 50px;
 }
@@ -100,20 +90,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 
-}
-.block-info{
-  width: 100%;
-  height: 100%;
 }
   @media(max-width: 1250px){
   .aboutPage{
     flex-direction: column;
     }
   .block-logo{
-    align-items: center;
-  }
-  .description{
     align-items: center;
   }
   }

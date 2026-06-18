@@ -29,17 +29,6 @@
       {/each}
     </section>
   </section>
-  <section class="newBlock">
-    <H3 text='Написать сообщение' style='h3-small'/>
-    {#each InputBlockData as value}
-      <div class="juf">
-        <Paragraf text={value.title}/>
-        <Input type='text' placeholder={value.placefolder}/>
-      </div>
-
-    {/each}
-    <Button text='Отправить'/>
-  </section>
 </section>
 
 <style>
@@ -47,21 +36,6 @@
   width: 20px;
   height: auto;
 }
-  .juf{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  .newBlock{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border);
-    padding: 20px 40px;
-    justify-content: space-between;
-    border-radius: 5px;
-    height: 100%;
-    gap: 40px;
-  }
   .contactBlock{
       border-top: 1px solid var(--border);
   }
@@ -81,14 +55,14 @@
 .buttonactive{
   background-color: rgb(0, 222, 0);
   border-radius: 100%;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
 }
 .contactPage{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: start;
   width: 100%;
-  gap: 100px;
 }
 .activeWork{
   display: flex;
@@ -103,16 +77,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-@media(max-width: 1800px){
-  .contactPage{
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-@media(max-width: 500px){
-    .newBlock{
-      padding: 10px 20px;
-  }
+  width: 100%;
 }
 </style>
