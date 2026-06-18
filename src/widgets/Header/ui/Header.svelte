@@ -14,7 +14,7 @@
 
 <header class="header">
   <div class="name-block">
-    <H3 text="Денис Баскаков" />
+    <H3 text="Denispitaus" />
     <Paragraf text="Frontend developer" />
   </div>
   {#if widthWindow<= 800}
