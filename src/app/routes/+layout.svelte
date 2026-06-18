@@ -2,7 +2,6 @@
   import '/src/app/app.css'
   import Header from '$widgets/Header';
   let { children } = $props();
-  export const prerender = true;
 </script>
 
 <!-- Оборачиваем всё в общий контейнер страницы -->

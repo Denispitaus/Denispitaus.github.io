@@ -19,6 +19,19 @@ const config = {
       base: process.env.NODE_ENV === 'production'
         ? '/name-вашего-репозитория'
         : ''
+    },
+    prerender: {
+      handleHttpError: (event) => {
+        // event может быть объектом или строкой
+        if (event && typeof event === 'object' && event.url) {
+          const pathname = event.url.pathname;
+          if (pathname.startsWith('/img/') || pathname.startsWith('/svg/')) {
+            return; // Подавить ошибку
+          }
+        }
+        // Для остальных ошибок —Throw или игнорировать
+        return; // ✅ Подавить все 404
+      }
     }
   }
 };
