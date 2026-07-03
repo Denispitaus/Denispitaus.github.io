@@ -21,6 +21,7 @@ const {
     font-size: 2.5rem;
     color: var(--foreground);
     font-weight: 600;
+    min-height: 60px;
   }
   .h3-small{
     font-size: 2.0rem;
@@ -31,7 +32,7 @@ const {
     font-size: 3rem;
     font-weight: 600;
     color: var(--foreground);
-    transition: all 0.5s;
+    min-height: 70px;
   }
 
 @media(max-width: 500px){
