@@ -28,6 +28,17 @@
   padding: 5px 15px;
   text-align: center;
 }
+.nav-link-active-big{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  border-bottom: 4px solid var(--foreground);
+  transition: all 0.1s ease-in;
+
+}
 .nav-link-open{
   font-weight: 600;
   font-size: 1.2rem;

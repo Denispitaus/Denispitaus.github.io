@@ -18,7 +18,7 @@
         clearInterval(intervalTitle)
         intervalTitle = null
       }
-    }, 150)
+    }, 100)
       return () => {
         if(intervalTitle){
           clearInterval(intervalTitle)

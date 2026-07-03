@@ -27,6 +27,7 @@ const {
     font-size: 2.0rem;
     color: var(--foreground);
     font-weight: 600;
+    transition: all 0.5s;
   }
   .h3-name{
     font-size: 3rem;

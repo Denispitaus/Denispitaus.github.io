@@ -33,7 +33,7 @@
       <Link
         text={item.text}
         href={item.href}
-        style={page.url.pathname === item.href ? 'nav-link-active' : 'nav-link'}
+        style={page.url.pathname === item.href ? 'nav-link-active-big' : 'nav-link'}
       />
     {/each}
   </nav>
