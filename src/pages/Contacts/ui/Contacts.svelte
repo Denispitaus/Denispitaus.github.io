@@ -9,9 +9,10 @@
   let Title = "Давайте работать вместе"
   let FinishTitle = $state('')
   let currentIndex = $state(0)
+  let intervalTitle = null
 
   $effect(() => {
-    let intervalTitle = setInterval(() => {
+    intervalTitle = setInterval(() => {
       if(currentIndex < Title.length){
         FinishTitle = FinishTitle + Title[currentIndex]
         currentIndex++
@@ -21,7 +22,14 @@
         intervalTitle = null
       }
     }, 150)
+      return () => {
+        if(intervalTitle){
+          clearInterval(intervalTitle)
+          intervalTitle = null
+        }
+    }
   })
+
 </script>
 
 

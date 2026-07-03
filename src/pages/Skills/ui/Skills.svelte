@@ -4,11 +4,34 @@
 	import Paragraf from '$shared/Paragraf';
 	import H3 from '$shared/H3';
   import { baseSkills, fraimforks, other, level } from '$entities/SkillsData';
+
+  let Title = "Навыки"
+  let FinishTitle = $state('')
+  let currentIndex = $state(0)
+  let intervalTitle = null;
+  $effect(() => {
+    intervalTitle = setInterval(() => {
+      if(currentIndex < Title.length){
+        FinishTitle = FinishTitle + Title[currentIndex]
+        currentIndex++
+      }
+      else{
+        clearInterval(intervalTitle)
+        intervalTitle = null
+      }
+    }, 150)
+      return () => {
+        if(intervalTitle){
+          clearInterval(intervalTitle)
+          intervalTitle = null
+        }
+    }
+  })
 </script>
 
 <section class="skills-page">
   <section class="title-block">
-    <H3 text="Навыки" style="h3-big"/>
+    <H3 text={FinishTitle} style="h3-big"/>
     <Paragraf text="Технологии, которые я использую в работе"/>
   </section>
   <section class="skills-block">
