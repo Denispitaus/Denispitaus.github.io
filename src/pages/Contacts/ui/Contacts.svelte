@@ -6,12 +6,28 @@
   import Link from '$shared/Link';
   import {contactMeData, InputBlockData} from '$entities/ContactData'
 
+  let Title = "Давайте работать вместе"
+  let FinishTitle = $state('')
+  let currentIndex = $state(0)
+
+  $effect(() => {
+    let intervalTitle = setInterval(() => {
+      if(currentIndex < Title.length){
+        FinishTitle = FinishTitle + Title[currentIndex]
+        currentIndex++
+      }
+      else{
+        clearInterval(intervalTitle)
+        intervalTitle = null
+      }
+    }, 150)
+  })
 </script>
 
 
 <section class="contactPage">
   <section class="leftBlock">
-    <H3 style='h3-name' text='Давайте работать вместе'/>
+    <H3 style='h3-name' text={FinishTitle}/>
     <Paragraf text='Открыт к фриланс-проектам, full-time и любым интересным задачам.'/>
     <div class="activeWork">
       <div class="buttonactive"></div>
@@ -57,7 +73,27 @@
   border-radius: 100%;
   width: 10px;
   height: 10px;
+  transition: all 1s linear;
+  animation: deactivebutton 3s linear infinite;
+  box-shadow: 0 0 5px 1px rgb(0, 222, 0);
 }
+@keyframes deactivebutton {
+  0%{
+    background-color: rgb(0, 222, 0);
+    box-shadow: 0 0 5px 1px rgb(0, 222, 0);
+
+  }
+  50%{
+    background-color: rgb(186, 186, 186);
+    box-shadow: none;
+  }
+  100%{
+    background-color: rgb(0, 222, 0);
+    box-shadow: 0 0 5px 1px rgb(0, 222, 0);
+
+  }
+}
+
 .contactPage{
   display: flex;
   justify-content: center;

@@ -31,7 +31,9 @@ const {
     font-size: 3rem;
     font-weight: 600;
     color: var(--foreground);
+    transition: all 0.5s;
   }
+
 @media(max-width: 500px){
   .h3-name{
     font-size: 2rem;
