@@ -41,6 +41,7 @@ button:hover{
   background-color: var(--muted-foreground);
   color: var(--background);
   border: 1px solid var(--muted-foreground);
+  transform: translateY(-5px);
 }
 .btn-white:active{
   background-color: var(--click-foreground);

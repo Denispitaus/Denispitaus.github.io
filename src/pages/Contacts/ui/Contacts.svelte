@@ -74,7 +74,22 @@
   align-items: center;
   padding: 25px 0;
   border-bottom: 1px solid var(--border);
-
+}
+.contactMe:hover{
+  .icon{
+    animation: bounce 0.5s ease-in-out;
+  }
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 .buttonactive{
   background-color: rgb(0, 222, 0);

@@ -53,17 +53,17 @@
 
 <style>
 .line-btn{
-  width: 10px;
-  height: 2px;
+  width: 100%;
+  height: 3px;
   background-color: var(--background);
-  border-radius: 5px;
+  border-radius: 1px;
 }
 .button-line{
   padding: 10px 15px;
   background-color: var(--primary);
   color: var(--primary-foreground);
   border: none;
-  border-radius: 6px;
+  border-radius: 15px;
   cursor: pointer;
   font-weight: 500;
   font-size: 0.7em;
@@ -73,6 +73,9 @@
   justify-content: space-around;
   flex-direction: column;
   gap: 1px;
+  min-width: 50px;
+  min-height: 40px;
+
 }
 .button-line:hover{
   background-color:rgb(47, 47, 47);
