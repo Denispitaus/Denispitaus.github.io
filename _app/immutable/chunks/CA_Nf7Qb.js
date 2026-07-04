@@ -1,1 +1,0 @@
-import{A as e,D as t,V as n,_ as r,g as i,l as a,s as o,u as s,y as c}from"./rz4OWV6M.js";import"./xihTtKlq.js";var l=c(`<a> </a>`);function u(c,u){var d=l(),f=e(d,!0);n(d),t(()=>{a(d,1,s(u.style),`svelte-5flqy5`),o(d,`href`,u.href),i(f,u.text)}),r(c,d)}var d=u;export{d as t};

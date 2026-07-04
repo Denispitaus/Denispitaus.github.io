@@ -1,0 +1,1 @@
+import{A as e,H as t,M as n,_ as r,y as i}from"./DZwy3kFl.js";import"./xihTtKlq.js";import{t as a}from"./BGgPGCNN.js";var o=i(`<div class="line-info svelte-1k2bvfd"><!> <!></div>`);function s(i,s){var c=o(),l=e(c);a(l,{get text(){return s.title}}),a(n(l,2),{style:`p-black`,get text(){return s.text}}),t(c),r(i,c)}var c=s;export{c as t};

@@ -1,1 +1,0 @@
-import{A as e,D as t,S as n,V as r,_ as i,g as a,l as o,u as s,x as c,y as l}from"./rz4OWV6M.js";import"./xihTtKlq.js";var u=l(`<button> </button>`);function d(c,l){var d=u(),f=e(d,!0);r(d),t(()=>{o(d,1,s(l.style),`svelte-nxw2ol`),a(f,l.text)}),n(`click`,d,function(...e){l.onclick?.apply(this,e)}),i(c,d)}c([`click`]);var f=d;export{f as t};
