@@ -30,7 +30,19 @@
 
 {#if isLoading}
   <main class="loadingPage">
-    <div class="loaderItem"></div>
+    <svg width="180" height="180" viewBox="0 0 180 180">
+      <circle
+        cx="90"
+        cy="90"
+        r="75"
+        fill="none"
+        stroke="var(--foreground)"
+        stroke-width="15"
+        stroke-dasharray="30 30"
+        stroke-linecap="round"
+        class="loaderItem"
+      />
+    </svg>
     <H3 style='h3-small' text='{step}%'></H3>
     <div class="outline">
       <div class="inline" style="width: {step}%;"></div>
@@ -60,16 +72,14 @@
   .inline{
     background-color: var(--foreground);
     width: 10px;
-    height: 8px;
+    height: 6px;
     border-radius: 100px;
     transition: all 0.5s ease;
   }
   .loaderItem{
-    border-radius: 500px;
-    width: 180px;
-    height: 180px;
-    border: 15px dashed var(--foreground);
     animation: spin ease-in-out 2s infinite;
+    transform-origin: center;
+    transition: all 0.2;
   }
   @keyframes spin{
     100%{
