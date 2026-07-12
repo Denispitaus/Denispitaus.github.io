@@ -20,23 +20,8 @@ const {
 }
 .nav-link:hover{
   font-weight: 600;
-  font-size: 1.5rem;
-  margin: 0 10px;
-  text-decoration: none;
   color: var(--foreground);
-  transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0);
-}
-.nav-link-deactive{
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  background-color: var(--foreground);
-  width: 100%;
-  border-radius: 10px;
-  padding: 5px 15px;
-  text-align: center;
 }
 
 button{
@@ -84,5 +69,40 @@ button:hover{
   button{
     font-size: 1rem;
   }
+}
+@media(max-width: 680px){
+  .nav-link{
+  font-weight: 600;
+  font-size: 1.20rem;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  word-break: keep-all;
+}
+}
+@media(max-width: 425px){
+  .nav-link{
+  font-weight: 600;
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  word-break: keep-all;
+  padding: 10px 0;
+  margin: 0;
+}
+}
+@media(max-width: 553px){
+  .nav-link{
+  font-weight: 600;
+  font-size: 0.90rem;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  word-break: keep-all;
+}
 }
 </style>

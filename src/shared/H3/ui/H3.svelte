@@ -41,7 +41,7 @@ const {
     font-size: 2rem;
   }
   h3{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .h3-small{
     font-size: 1.6rem;

@@ -11,7 +11,7 @@ function ClickAndSkroll(id) {
   if (!element) return;
 
   const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-  const offset = -110;
+  const offset = -200;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
   // Не даем уйти за пределы страницы

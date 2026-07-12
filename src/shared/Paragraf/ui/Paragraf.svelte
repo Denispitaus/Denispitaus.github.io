@@ -32,7 +32,7 @@ p{
     font-size: 1rem;
   }
   p{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .h3-small{
     font-size: 1.6rem;

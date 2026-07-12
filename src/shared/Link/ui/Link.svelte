@@ -56,6 +56,7 @@
 }
 .nav-link{
   font-size: 1rem;
+  padding: none;
 }
 }
 .nav-link:hover{

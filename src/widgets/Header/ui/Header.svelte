@@ -19,7 +19,7 @@
     <H3 text="Denispitaus" />
     <Paragraf text="Frontend developer" />
   </div>
-  <nav>
+  <nav class="nav-block">
     {#each navItems as item}
       <Button
         text={item.text}
@@ -41,6 +41,8 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 20px 1px black;
+
 }
 .name-block{
   display: flex;
@@ -48,7 +50,31 @@
 }
 @media(max-width: 680px){
     .header{
+      padding: 5px 0px;
+  }
+}
+@media(max-width: 900px){
+    .header{
+      background-color: var(--background);
+      position: sticky;
+      top: 0;
       padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      gap: 10px;
+}
+.nav-block{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+}
+@media(max-width: 425px){
+    .header{
+      padding: 5px 15px;
   }
 }
 </style>
