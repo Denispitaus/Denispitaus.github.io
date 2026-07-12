@@ -5,15 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
     <link rel="icon" href="/name-вашего-репозитория/img/my-logo.gif" />
-		<link href="/name-вашего-репозитория/_app/immutable/entry/start.BesVQHjs.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/t8hve_i2.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/entry/start.C-GApB7N.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/Dtsf2STx.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/CwfBM0BS.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/entry/app.ComU4vWn.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/entry/app.BX450eKc.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/nodes/0.CrCxJEbn.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/BvZ6LDLJ.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/BN-d2lTC.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/nodes/0.DvWAzZ93.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/ZRWjRsTF.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/DBDkcXvj.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/Ck-x8jHU.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/DBeHqjsf.js" rel="modulepreload">
 		
@@ -26,7 +26,7 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_1v5d6fl = {
+					__sveltekit_q2wozi = {
 						base: "/name-вашего-репозитория",
 						assets: "/name-вашего-репозитория"
 					};
@@ -34,8 +34,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/name-вашего-репозитория/_app/immutable/entry/start.BesVQHjs.js"),
-						import("/name-вашего-репозитория/_app/immutable/entry/app.ComU4vWn.js")
+						import("/name-вашего-репозитория/_app/immutable/entry/start.C-GApB7N.js"),
+						import("/name-вашего-репозитория/_app/immutable/entry/app.BX450eKc.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
