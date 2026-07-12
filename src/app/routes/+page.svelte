@@ -26,8 +26,8 @@ function ClickAndSkroll(id) {
 
 <Header onclick={ClickAndSkroll}/>
 <section class="page-content">
-  <About/>
-  <Skills/>
+  <About onclick={ClickAndSkroll}/>
+  <Skills onclick={ClickAndSkroll}/>
   <Project/>
   <Contacts/>
 </section>

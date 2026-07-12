@@ -27,6 +27,9 @@
         }
     }
   })
+  let {
+    onclick
+  } = $props()
 </script>
 
 <section id='Skills' class="skills-page">
@@ -69,9 +72,7 @@
   </section>
   <section class="additional-info">
     <Paragraf text='Постоянно изучаю новое. Открыт к фриланс-проектам и full-time позициям.'/>
-    <a href="/Contacts">
-      <Button text="Связаться" onclick={() => {}} />
-    </a>
+    <Button text="Связаться" onclick={()=>onclick('Contacts')} />
   </section>
 </section>
 

@@ -5,6 +5,9 @@
   import LineText from '$widgets/LineText';
   import { personalData } from '$entities/PersonalData';
   import {smallInfoData} from '$entities/AboutData.js'
+  let {
+    onclick
+  } = $props()
 </script>
 
 <section id='About' class="aboutPage">
@@ -16,27 +19,19 @@
       <Paragraf style="p-text" text="Создаю быстрые и аккуратные веб-интерфейсы. Здесь - мои проекты, навыки и контакты."/>
     </div>
     <section class="nav-btn">
-      <a href="/Contacts">
-        <Button style="btn-white" text="Github"/>
-      </a>
-      <a href="/Contacts">
-        <Button style="btn-white" text="Telegram"/>
-      </a>
-      <a href="/Contacts">
-        <Button style="btn-white" text="Email"/>
-      </a>
+        <Button style="btn-white" text="Github" onclick={()=>onclick('Contacts')}/>
+        <Button style="btn-white" text="Telegram" onclick={()=>onclick('Contacts')}/>
+        <Button style="btn-white" text="Email" onclick={()=>onclick('Contacts')}/>
     </section>
-  </section>
     <section class="small-info">
       {#each smallInfoData as value}
       <div class='blockSmallInfo'>
         <H3 style='h3-small' text={value.title}/>
         <Paragraf text={value.text}/>
       </div>
-
       {/each}
   </section>
-
+</section>
 
 </section>
 
