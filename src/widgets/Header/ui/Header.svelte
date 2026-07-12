@@ -3,11 +3,13 @@
   import Button from '$shared/Button';
   import H3 from '$shared/H3';
   import Paragraf from '$shared/Paragraf';
-  import Link from '$shared/Link';
   import { navItems } from '$entities/LinkData';
 
   let widthWindow = $state(0);
   let isOpenBurger = $state(false);
+  let {
+    onclick
+  } = $props()
 </script>
 
 <svelte:window bind:innerWidth={widthWindow} />
@@ -17,87 +19,19 @@
     <H3 text="Denispitaus" />
     <Paragraf text="Frontend developer" />
   </div>
-  {#if widthWindow<= 800}
-    <div>
-      <!-- svelte-ignore a11y_consider_explicit_label -->
-      <button class='button-line' onclick={()=>{isOpenBurger = !isOpenBurger}}>
-        <div class="line-btn"></div>
-        <div class="line-btn"></div>
-        <div class="line-btn"></div>
-      </button>
-    </div>
-
-  {:else}
   <nav>
     {#each navItems as item}
-      <Link
+      <Button
         text={item.text}
-        href={item.href}
-        style={page.url.pathname === item.href ? 'nav-link-active-big' : 'nav-link'}
+        onclick={() => onclick(item.href)}
+        style={'nav-link'}
       />
     {/each}
   </nav>
-  {/if}
-    {#if isOpenBurger & widthWindow <= 800}
-      <div class="openBurger">
-        {#each navItems as item}
-          <Link
-            text={item.text}
-            href={item.href}
-            style={page.url.pathname === item.href ? 'nav-link-active' : 'nav-link'}
-          />
-        {/each}
-      </div>
-    {/if}
 </header>
 
 <style>
-.line-btn{
-  width: 100%;
-  height: 3px;
-  background-color: var(--background);
-  border-radius: 1px;
-}
-.button-line{
-  padding: 10px 15px;
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 0.7em;
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  gap: 1px;
-  min-width: 50px;
-  min-height: 40px;
 
-}
-.button-line:hover{
-  background-color:rgb(47, 47, 47);
-}
-.button-line:active{
-  background-color:rgb(94, 94, 94);
-}
-.openBurger{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: absolute;
-  gap: 20px;
-  background-color: rgb(232, 232, 232);
-  border-radius: 15px;
-  top: 80px;
-  right: 5px;
-  padding: 20px 20px;
-  align-items: center;
-  border: 1px solid var(--border);
-  box-sizing: border-box;
-}
 .header{
   background-color: var(--background);
   position: sticky;
@@ -116,17 +50,5 @@
     .header{
       padding: 10px 20px;
   }
-}
-@media(max-width: 400px){
-    .openBurger{
-      padding: 10px 5px;
-      gap: 10px;
-  }
-}
-@media(min-width: 500px){
-  .openBurger{
-    top: 110px;
-    right: 5px;
-}
 }
 </style>

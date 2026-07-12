@@ -29,11 +29,13 @@
         }
     }
   })
-
+let {
+  ContactsPage
+} = $props()
 </script>
 
 
-<section class="contactPage">
+<section id='Contacts' class="contactPage">
   <section class="leftBlock">
     <H3 style='h3-name' text={FinishTitle}/>
     <Paragraf text='Открыт к фриланс-проектам, full-time и любым интересным задачам.'/>

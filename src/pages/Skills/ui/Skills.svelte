@@ -29,7 +29,7 @@
   })
 </script>
 
-<section class="skills-page">
+<section id='Skills' class="skills-page">
   <section class="title-block">
     <H3 text={FinishTitle} style="h3-big"/>
     <Paragraf text="Технологии, которые я использую в работе"/>

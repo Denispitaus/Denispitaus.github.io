@@ -9,6 +9,35 @@ const {
 <button class={style} onclick={onclick}>{text}</button>
 
 <style>
+.nav-link{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-link:hover{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-link-deactive{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: var(--foreground);
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 15px;
+  text-align: center;
+}
 
 button{
   padding: 10px 15px;

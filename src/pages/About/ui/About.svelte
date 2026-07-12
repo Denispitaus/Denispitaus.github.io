@@ -7,7 +7,7 @@
   import {smallInfoData} from '$entities/AboutData.js'
 </script>
 
-<section class="aboutPage">
+<section id='About' class="aboutPage">
   <section class="block-logo">
     <img src="/img/my-logo.gif" alt="My Logo" class="logo">
     <div class="description">

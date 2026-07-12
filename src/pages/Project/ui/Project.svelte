@@ -31,7 +31,7 @@
 
 
 
-<section class="page">
+<section id='Projects' class="page">
   <section class="titlePage">
     <H3 text={FinishTitle} style='h3-big'/>
     <div class="projectCount">

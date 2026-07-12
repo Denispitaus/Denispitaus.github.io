@@ -49,13 +49,9 @@
     </div>
   </main>
 {:else}
-  <div class="layout-wrapper">
-    <Header />
-
     <main class="page-content">
       {@render children()}
     </main>
-  </div>
 {/if}
 <style>
   .outline{
@@ -94,27 +90,9 @@
     align-items: center;
     gap: 50px;
   }
-  .layout-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  /* 2. Стили для контента */
-  .page-content {
-    flex-grow: 1; /* Занимает всё оставшееся место по высоте */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Центрирует по вертикали внутри main */
-    align-items: center;    /* Центрирует по горизонтали внутри main */
-    padding: 50px 250px;
-  }
 
   /* Ваши адаптивные стили без изменений */
   @media(max-width: 1100px){
-    .page-content{
-      padding: 50px 100px;
-    }
     .loaderItem{
     border-radius: 500px;
     width: 120px;
@@ -124,9 +102,7 @@
   }
   }
   @media(max-width: 680px){
-    .page-content{
-      padding: 30px 50px;
-    }
+
     .loaderItem{
     border-radius: 500px;
     width: 100px;
@@ -147,9 +123,7 @@
   }
   }
   @media(max-width: 385px){
-    .page-content{
-      padding: 20px 50px;
-    }
+
     .loaderItem{
     border-radius: 500px;
     width: 70px;
