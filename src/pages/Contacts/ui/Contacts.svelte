@@ -6,38 +6,16 @@
   import Link from '$shared/Link';
   import {contactMeData, InputBlockData} from '$entities/ContactData'
 
-  let Title = "Давайте работать вместе"
-  let FinishTitle = $state('')
   let currentIndex = $state(0)
-  let intervalTitle = null
-
-  $effect(() => {
-    intervalTitle = setInterval(() => {
-      if(currentIndex < Title.length){
-        FinishTitle = FinishTitle + Title[currentIndex]
-        currentIndex++
-      }
-      else{
-        clearInterval(intervalTitle)
-        intervalTitle = null
-      }
-    }, 100)
-      return () => {
-        if(intervalTitle){
-          clearInterval(intervalTitle)
-          intervalTitle = null
-        }
-    }
-  })
-let {
-  ContactsPage
-} = $props()
+  let {
+    ContactsPage
+  } = $props()
 </script>
 
 
 <section id='Contacts' class="contactPage">
   <section class="leftBlock">
-    <H3 style='h3-name' text={FinishTitle}/>
+    <H3 style='h3-name' text='Давайте работать вместе'/>
     <Paragraf text='Открыт к фриланс-проектам, full-time и любым интересным задачам.'/>
     <div class="activeWork">
       <div class="buttonactive"></div>

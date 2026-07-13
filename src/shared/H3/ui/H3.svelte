@@ -48,6 +48,7 @@ const {
   }
   .h3-big{
     font-size: 1.6rem;
+    padding: 0;
   }
 }
 </style>

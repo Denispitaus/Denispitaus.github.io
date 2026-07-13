@@ -7,25 +7,6 @@
   let Title = "Проекты"
   let FinishTitle = $state('')
   let currentIndex = $state(0)
-  let intervalTitle = null
-  $effect(() => {
-    intervalTitle = setInterval(() => {
-      if(currentIndex < Title.length){
-        FinishTitle = FinishTitle + Title[currentIndex]
-        currentIndex++
-      }
-      else{
-        clearInterval(intervalTitle)
-        intervalTitle = null
-      }
-    }, 100)
-      return () => {
-        if(intervalTitle){
-          clearInterval(intervalTitle)
-          intervalTitle = null
-        }
-    }
-  })
 </script>
 
 
@@ -33,7 +14,7 @@
 
 <section id='Projects' class="page">
   <section class="titlePage">
-    <H3 text={FinishTitle} style='h3-big'/>
+    <H3 text='Проекты' style='h3-big'/>
     <div class="projectCount">
       <Paragraf text='Отобранные работы'/>
       <Paragraf text={ProjectData.length + " работы"}/>
