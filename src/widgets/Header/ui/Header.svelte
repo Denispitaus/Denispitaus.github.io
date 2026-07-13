@@ -41,7 +41,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 20px 1px black;
+  box-shadow: 0 1px 10px 0 rgb(207, 207, 207);
 
 }
 .name-block{
@@ -70,11 +70,18 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid rgb(238, 238, 238);
+  align-items: center;
 }
 }
 @media(max-width: 425px){
     .header{
       padding: 5px 15px;
+  }
+}
+@media(max-width: 475px){
+    .header{
+      padding: 5px 5px;
   }
 }
 </style>

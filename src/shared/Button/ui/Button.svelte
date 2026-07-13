@@ -90,19 +90,32 @@ button:hover{
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0);
   word-break: keep-all;
-  padding: 10px 0;
+  padding: 10px 12px;
   margin: 0;
 }
 }
 @media(max-width: 553px){
   .nav-link{
   font-weight: 600;
-  font-size: 0.90rem;
+  font-size: 0.80rem;
   text-decoration: none;
   color: var(--muted-foreground);
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0);
   word-break: keep-all;
+}
+}
+@media(max-width: 315px){
+  .nav-link{
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  word-break: keep-all;
+  padding: 10px 12px;
+  margin: 0;
 }
 }
 </style>
