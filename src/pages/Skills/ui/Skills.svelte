@@ -52,7 +52,7 @@
   </section>
   <section class="additional-info">
     <Paragraf text='Постоянно изучаю новое. Открыт к фриланс-проектам и full-time позициям.'/>
-    <Button text="Связаться" onclick={()=>onclick('Contacts')} />
+    <Button style='btn-skills' text="Связаться" onclick={()=>onclick('Contacts')} />
   </section>
 </section>
 

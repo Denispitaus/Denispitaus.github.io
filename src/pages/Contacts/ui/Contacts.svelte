@@ -25,7 +25,6 @@
       {#each contactMeData as value}
         <div class="contactMe">
           <div class="nameBlock">
-            <img class='icon' src={value.img} alt="">
             <Paragraf text={value.title}/>
           </div>
           <Link style='nav-link-open' href={value.href} text={value.link}/>
@@ -36,10 +35,6 @@
 </section>
 
 <style>
-.icon{
-  width: 20px;
-  height: auto;
-}
   .contactBlock{
       border-top: 1px solid var(--border);
   }

@@ -23,7 +23,17 @@ const {
   color: var(--foreground);
   background-color: rgba(255, 255, 255, 0);
 }
-
+.btn-skills{
+    padding: 10px 15px;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: 1px solid var(--primary-foreground);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
 button{
   padding: 10px 15px;
   background-color: var(--primary);
@@ -67,6 +77,9 @@ button:hover{
     font-size: 0.8rem;
   }
   button{
+    font-size: 1rem;
+  }
+  .btn-skills{
     font-size: 1rem;
   }
 }

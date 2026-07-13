@@ -41,7 +41,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 10px 0 rgb(207, 207, 207);
+  box-shadow: 0 1px 15px 0 var(--border);
 
 }
 .name-block{
@@ -70,7 +70,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgb(238, 238, 238);
+  border-top: 1px solid var(--border);
   align-items: center;
 }
 }
