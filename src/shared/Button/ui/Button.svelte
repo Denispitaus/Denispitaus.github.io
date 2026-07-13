@@ -131,4 +131,17 @@ button:hover{
   margin: 0;
 }
 }
+@media(max-width: 280px){
+  .nav-link{
+  font-weight: 600;
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  word-break: keep-all;
+  padding: 10px 12px;
+  margin: 0;
+}
+}
 </style>

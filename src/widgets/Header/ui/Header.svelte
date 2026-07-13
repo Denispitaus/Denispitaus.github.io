@@ -36,7 +36,6 @@
   background-color: var(--background);
   position: sticky;
   top: 0;
-  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +46,7 @@
 .name-block{
   display: flex;
   flex-direction: column;
+  padding: 10px 40px;
 }
 @media(max-width: 680px){
     .header{
@@ -58,7 +58,6 @@
       background-color: var(--background);
       position: sticky;
       top: 0;
-      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: start;
@@ -71,15 +70,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid var(--border);
 }
 }
 @media(max-width: 425px){
-    .header{
+    .name-block{
       padding: 5px 15px;
   }
 }
 @media(max-width: 475px){
-    .header{
+    .name-block{
       padding: 5px 5px;
   }
 }
