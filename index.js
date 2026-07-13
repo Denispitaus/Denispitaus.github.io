@@ -5,28 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
     <link rel="icon" href="/name-вашего-репозитория/img/my-logo.gif" />
-		<link href="/name-вашего-репозитория/_app/immutable/entry/start.C-GApB7N.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/Dtsf2STx.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/CwfBM0BS.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/entry/app.BX450eKc.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/entry/start.Bvt0jlo8.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/Dq0oxUbF.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/DNkNrGWh.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/entry/app.BUqmP-U9.js" rel="modulepreload">
 		<link href="/name-вашего-репозитория/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/nodes/0.DvWAzZ93.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/ZRWjRsTF.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/DBDkcXvj.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/Ck-x8jHU.js" rel="modulepreload">
-		<link href="/name-вашего-репозитория/_app/immutable/chunks/DBeHqjsf.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/nodes/0.JdGCTq_D.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/Bd3mEmsW.js" rel="modulepreload">
+		<link href="/name-вашего-репозитория/_app/immutable/chunks/3QbFAMr2.js" rel="modulepreload">
 		
-		<link href="/name-вашего-репозитория/_app/immutable/assets/Button.BRo12qbA.css" rel="stylesheet">
-		<link href="/name-вашего-репозитория/_app/immutable/assets/Paragraf.DzjcdCkf.css" rel="stylesheet">
-		<link href="/name-вашего-репозитория/_app/immutable/assets/Header.CTF1RZiS.css" rel="stylesheet">
-		<link href="/name-вашего-репозитория/_app/immutable/assets/0.vf_lLKn7.css" rel="stylesheet">
+		<link href="/name-вашего-репозитория/_app/immutable/assets/Header.DSRBTnsI.css" rel="stylesheet">
+		<link href="/name-вашего-репозитория/_app/immutable/assets/0.BBEr02OW.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_q2wozi = {
+					__sveltekit_1fxiquq = {
 						base: "/name-вашего-репозитория",
 						assets: "/name-вашего-репозитория"
 					};
@@ -34,8 +29,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/name-вашего-репозитория/_app/immutable/entry/start.C-GApB7N.js"),
-						import("/name-вашего-репозитория/_app/immutable/entry/app.BX450eKc.js")
+						import("/name-вашего-репозитория/_app/immutable/entry/start.Bvt0jlo8.js"),
+						import("/name-вашего-репозитория/_app/immutable/entry/app.BUqmP-U9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
