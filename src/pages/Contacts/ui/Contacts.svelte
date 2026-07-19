@@ -14,7 +14,7 @@
 
 
 <section id='Contacts' class="contactPage">
-  <section class="leftBlock">
+  <div class="leftBlock">
     <H3 style='h3-name' text='Давайте работать вместе'/>
     <Paragraf text='Открыт к фриланс-проектам, full-time и любым интересным задачам.'/>
     <div class="activeWork">
@@ -31,7 +31,7 @@
         </div>
       {/each}
     </section>
-  </section>
+  </div>
 </section>
 
 <style>

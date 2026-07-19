@@ -13,10 +13,10 @@
 </script>
 
 <section id='Skills' class="skills-page">
-  <section class="title-block">
+  <div class="title-block">
     <H3 text='Навыки' style="h3-big"/>
     <Paragraf text="Технологии, которые я использую в работе"/>
-  </section>
+  </div>
   <section class="skills-block">
     <section class="base-skills">
       <H3 text={baseSkills[0].title}/>
@@ -50,10 +50,10 @@
       {/each}
     </section>
   </section>
-  <section class="additional-info">
+  <div class="additional-info">
     <Paragraf text='Постоянно изучаю новое. Открыт к фриланс-проектам и full-time позициям.'/>
     <Button style='btn-skills' text="Связаться" onclick={()=>onclick('Contacts')} />
-  </section>
+  </div>
 </section>
 
 <style>

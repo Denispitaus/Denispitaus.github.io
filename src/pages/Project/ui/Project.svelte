@@ -23,7 +23,7 @@
   <section class="project">
     {#each ProjectData as value, index}
       <div class="Card">
-        <img src={value.link} alt="" class="img">
+        <img src={value.link} alt="{`Скриншот проекта ${value.title}`}" class="img">
         <div class="titleBlock">
           <div class="headerCard">
             <Paragraf text={'0'+ (index+1)}/>

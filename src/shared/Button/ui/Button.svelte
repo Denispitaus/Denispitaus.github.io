@@ -13,6 +13,7 @@ const {
   font-weight: 600;
   font-size: 1.5rem;
   margin: 0 10px;
+  padding: 20px;
   text-decoration: none;
   color: var(--muted-foreground);
   transition: all 0.3s ease;
@@ -116,6 +117,7 @@ button:hover{
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0);
   word-break: keep-all;
+  padding: 12px;
 }
 }
 @media(max-width: 315px){

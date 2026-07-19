@@ -11,18 +11,18 @@
 </script>
 
 <section id='About' class="aboutPage">
-  <section class="block-logo">
+  <div class="block-logo">
     <img src="/img/my-logo.gif" alt="My Logo" class="logo">
     <div class="description">
       <H3 style="h3-name" text="Denispitaus"/>
       <Paragraf style="p-big" text="Frontend Developer"/>
       <Paragraf style="p-text" text="Создаю быстрые и аккуратные веб-интерфейсы. Здесь - мои проекты, навыки и контакты."/>
     </div>
-    <section class="nav-btn">
+    <nav class="nav-btn">
         <Button style="btn-white" text="Github" onclick={()=>onclick('Contacts')}/>
         <Button style="btn-white" text="Telegram" onclick={()=>onclick('Contacts')}/>
         <Button style="btn-white" text="Email" onclick={()=>onclick('Contacts')}/>
-    </section>
+    </nav>
     <section class="small-info">
       {#each smallInfoData as value}
       <div class='blockSmallInfo'>
@@ -31,7 +31,7 @@
       </div>
       {/each}
   </section>
-</section>
+</div>
 
 </section>
 

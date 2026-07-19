@@ -15,10 +15,10 @@
 <svelte:window bind:innerWidth={widthWindow} />
 
 <header class="header">
-  <div class="name-block">
+  <section class="name-block">
     <H3 text="Denispitaus" />
     <Paragraf text="Frontend developer" />
-  </div>
+  </section>
   <nav class="nav-block">
     {#each navItems as item}
       <Button
