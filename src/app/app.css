@@ -1,31 +1,30 @@
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
-  --hover-foreground: #ff00ff;
-  --click-foreground: #0a0a0a;
-  --click-primary: #ff00ff;
-  --border: #ff00ff;
-  --border-gradient: linear-gradient(
-    90deg,
-    #ff0000,
-    #ff8800,
-    #ffff00,
-    #00ff00,
-    #0088ff,
-    #8800ff
-  );
-  --input: #1a1a1a;
-  --primary: linear-gradient(135deg, #ff0066, #ff00ff);
+  --background: #07111f;
+  --foreground: #e0f2fe;
+  --hover-foreground: #2dd4bf;
+  --click-foreground: #07111f;
+  --click-primary: #14b8a6;
+  --border: #164e63;
+  --border-gradient: linear-gradient(90deg,
+      #06b6d4,
+      #14b8a6,
+      #2dd4bf,
+      #38bdf8,
+      #0ea5e9,
+      #06b6d4);
+  --input: #0c1a2b;
+  --primary: linear-gradient(135deg, #0891b2, #14b8a6);
   --primary-foreground: #ffffff;
-  --secondary: linear-gradient(135deg, #1a1a1a, #2a0a2a);
-  --secondary-foreground: #00ffff;
-  --muted: #1a0a0a;
-  --muted-foreground: #aa88aa;
-  --card: linear-gradient(145deg, #0a0a0a, #1a0a2a);
-  --card-foreground: #ffffff;
-  --accent: linear-gradient(135deg, #00ffff, #ff00ff);
-  --accent-foreground: #0a0a0a;
+  --secondary: linear-gradient(135deg, #0c1a2b, #0f2d3d);
+  --secondary-foreground: #5eead4;
+  --muted: #0f2d3d;
+  --muted-foreground: #94a3b8;
+  --card: linear-gradient(145deg, #07111f, #0d2638);
+  --card-foreground: #ecfeff;
+  --accent: linear-gradient(135deg, #22d3ee, #2dd4bf);
+  --accent-foreground: #07111f;
 }
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -35,23 +34,20 @@ body {
   margin: 0;
   position: relative;
   background:
-    radial-gradient(
-      circle at 20% 50%,
-      rgba(255, 0, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 50%,
-      rgba(0, 255, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    linear-gradient(-45deg, #0a0a0a, #1a0a2a, #0a0a0a);
+    radial-gradient(circle at 20% 50%,
+      rgba(6, 182, 212, 0.13) 0%,
+      transparent 50%),
+    radial-gradient(circle at 80% 50%,
+      rgba(20, 184, 166, 0.1) 0%,
+      transparent 50%),
+    linear-gradient(-45deg, #07111f, #0d2638, #07111f);
   background-size:
     100% 100%,
     100% 100%,
     400% 400%;
   animation: gradient 10s ease infinite;
 }
+
 h1,
 h2,
 h3,
@@ -62,6 +58,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
